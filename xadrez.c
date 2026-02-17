@@ -18,6 +18,14 @@ void movimetaBispo(int numero) {
     }
 }
 
+void movimentaTorre(int numero) {
+    printf("Movimentando Torre:\n");
+    if (numero > 0) {
+        printf("Direita\n");
+        movimentaTorre(numero - 1);
+    }
+}
+
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
