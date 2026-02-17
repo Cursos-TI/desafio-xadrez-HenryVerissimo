@@ -19,10 +19,28 @@ void movimetaBispo(int numero) {
 }
 
 void movimentaTorre(int numero) {
-    printf("Movimentando Torre:\n");
+    printf("\nMovimentando Torre:\n");
     if (numero > 0) {
         printf("Direita\n");
         movimentaTorre(numero - 1);
+    }
+}
+
+void movimentaRainha(int numero) {
+    printf("\nMovimentando Rainha:\n");
+    if (numero > 0) {
+        printf("Esquerda\n");
+        movimentaRainha(numero - 1);
+    }
+}
+
+void movimentaCavalo() {
+    printf("\nMovimentando Cavalo:\n");
+    for (int movimento1 = 0; movimento < 1; movimento1 ++) {
+        for (int movimento2 = 0; movimento < 2; movimento2 ++) {
+            printf("Cima\n");
+        }
+        printf("Direita\n");
     }
 }
 
